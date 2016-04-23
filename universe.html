@@ -1,24 +1,28 @@
 <h3 class="block-title">Universe - Interacting with other players</h3>
 
 <p>Every single account that is currently active can be found on these pages in
-order of their overall rank. Their army size and resources on hand will be
-displayed to you depending on your covert power compared to theirs. You can then
-click on the persons name to see their profile page and take actions like sending
-them a message or attacking them. Every 30 minutes your account will
-automatically generate <?php $conf["attackTurns_per_turn"] ;?> new Attack Turns (AT), which you can use for one of the attack
-types.</p>
+    order of their overall rank. Their army size and resources on hand will be
+    displayed to you depending on your covert power compared to theirs. You can
+    then
+    click on the persons name to see their profile page and take actions like
+    sending
+    them a message or attacking them. Every 30 minutes your account will
+    automatically generate <?php $conf["attackTurns_per_turn"] ;?> new Attack
+    Turns (AT), which you can use for one of the attack
+    types.</p>
 
 <p>Players not on protection will see two buttons. The Attack Button:
-<button class="btn btn-xs" name="attack">
-<i class="fa fa-crosshairs"></i>
-</button>
-and the Spy Button:
-<button class="btn btn-xs" name="spy">
-<i class="fa fa-eye"></i>
-</button>
-. Clicking on either of these buttons in the Universe Page will allow the player
-to instantly attack their target. A word of caution, as if your target is
-stronger than you are, there is no backing out.
+    <button class="btn btn-xs" name="attack">
+        <i class="fa fa-crosshairs"></i>
+    </button>
+    and the Spy Button:
+    <button class="btn btn-xs" name="spy">
+        <i class="fa fa-eye"></i>
+    </button>
+    . Clicking on either of these buttons in the Universe Page will allow the
+    player
+    to instantly attack their target. A word of caution, as if your target is
+    stronger than you are, there is no backing out.
 </p>
 
 <!--<p> Commander Power/Ranks - Power is based on the officers total attack power and
@@ -26,86 +30,68 @@ covert power weighted at 99% and 1% respectively. The weighting helps hide the
 actual powers a little and is subject to adjustments in the future as covert
 levels go up higher.</p> -->
 
-<p>Clicking on a player account allows you to see their profile page. From here you
-have the following options
+<p>Clicking on a player account allows you to see their profile page. From here
+    you
+    have the following options
 <dl>
-<dt>
-<b>Attack</b>
-</dt>
-<dd>Attacking another player allows you to destroy their Ships, if your fleet
-are larger in size or power than theirs, you will be be able to obtain a
-specified amount of their Credits, Food and Metals. This retrieved income is
-added to your own to use with as you wish. However if it is not used quickly
-another player can steal them away from you.
-</dd>
-<br>
-<dt>
-<b>Spy</b>
-</dt>
-<dd>Spying on another player allows you to see certain account details in their
-account, particularly their army size, and allocation of resources. Their
-covert, defensive and attack capabilities. Their population growth, and
-attack turns and their current alert level.
-<i>The phrase look before you leap comes to mind.</i>
-</dd>
-<br>
-<dt>
-<b>Send Message</b>
-</dt>
-<dd>You may want to communicate with another player, in order to do this, we
-have provided players with their own "in-game email". This will send a
-communication to another player.
-</dd>
-<br>
-<dt>
-<b>Give Resources</b>
-</dt>
-<dd>Players who have purchased MV Points can send to another player from this
-page. Donators will have additional options. A Donator of $20 USD (or more)
-will be able to send Attack Turns, Credits, Food, Metals and Untrained
-Units.
-</dd>
-<br>
-<dt>
-<b>Relations</b>
-</dt>
-<dd>No community can exist without relations for your neighbors. As a result, we
-have 3 options available for players.
-<br>
-<b>Declare War</b>
-- This option allows players to Declare War on someone, this will increase
-their yields they receive by a large percentage. In addition damage will do
-more damage. If both players are at War, this will increase damage even
-further.
-<br>
-<b>Declare Peace</b>
-- This option allows players to Declare Peace with someone. Selecting this
-option will restrict the ability to attack, spy or destroy the other player
-<br>
-<b>Declare Neutral</b>
-- This is the
-<i>default setting</i>
-, if this is selected players receive the default amount of resources, and
-attack damage is reset to it's base level.
-<br>
-<br>
-<b>ALL DECLARATIONS LAST FOR A MINIMUM OF 24 HOURS</b>
-<br>
-<br>
-</dd>
-<dt>
-<b>Make this user my commander</b>
-</dt>
-<dd>Setting a user as a commander is beneficial for both parties. Officers gain
-a percentage of the Commanders income (10%, 15%, 20%, 25%, 30%). In return
-the commanders get a population bonus of the officers total unit production.
+    <dt>
+        <b>Attack</b>
+    </dt>
+    <dd>Attacking another player allows you to destroy their Ships, if your
+        fleet
+        are larger in size or power than theirs, you will be be able to obtain a
+        specified amount of their Credits, Food and Metals. This retrieved
+        income is
+        added to your own to use with as you wish. However if it is not used
+        quickly
+        another player can steal them away from you.
+    </dd>
+    <br>
+    <dt>
+        <b>Spy</b>
+    </dt>
+    <dd>Spying on another player allows you to see certain account details in
+        their
+        account, particularly their army size, and allocation of resources.
+        Their
+        covert, defensive and attack capabilities. Their population growth, and
+        attack turns and their current alert level.
+        <i>The phrase look before you leap comes to mind.</i>
+    </dd>
+    <br>
+    <dt>
+        <b>Send Message</b>
+    </dt>
+    <dd>You may want to communicate with another player, in order to do this, we
+        have provided players with their own "in-game email". This will send a
+        communication to another player.
+    </dd>
+    <br>
+    <dt>
+        <b>Give MV Points</b>
+    </dt>
+    <dd>Players who have purchased MV Points can send them to other players from
+        this page.
+    </dd>
+    <br>
+    <dt>
+        <b>Make this user my commander</b>
+    </dt>
+    <dd>Setting a user as a commander is beneficial for both parties. Officers
+        gain
+        a percentage of the Commanders income (10%, 15%, 20%, 25%, 30%). In
+        return
+        the commanders get a population bonus of the officers total unit
+        production.
 
-(25/{# of officers} +20)*({officer rate}/30). This means with a single
-officer you get a bonus equal to 30% of their population growth. With 2
-officers you get 17.5% of each and so on. Overall your bonus still goes up
-with the more officers you have but not quite as high as it used to be for
-those with higher number of officers.
-</dd>
-<br>
+        (25/{# of officers} +20)*({officer rate}/30). This means with a single
+        officer you get a bonus equal to 30% of their population growth. With 2
+        officers you get 17.5% of each and so on. Overall your bonus still goes
+        up
+        with the more officers you have but not quite as high as it used to be
+        for
+        those with higher number of officers.
+    </dd>
+    <br>
 </dl>
 </p>
